@@ -1,65 +1,20 @@
-#PRACTICE SET DICTIOnARIES AND SETS
-#DICTIONARIES
-marks = {
-    "harry": 100,
-    "maham": 50
-}
+#write a python ptogram to display a user entered name followed by Good Afternoon using input () function.
+name=input("enter your name:")
+print(f"Good Afternoon,{name}")
 
-print(marks,type (marks))
-#you dont check keys as indexing like
-#print[0]
-#but you can index as a keys like print["harry""]
-print(marks["maham"])
-student = {"name": "Ali", "age": 20}
+#write  aprogram to gill in letter template given below with name and date.
+letter=   '''Dear <|Name|>,
+               You are selected!
+               <|Date|>'''
+print(letter.replace("<|Name|>","Duaa").replace("<|Date|>","12 November 2026"))
 
-print(student.get("name"))
-print(student.keys())
-print(student.values())
-print(student.items())
-student.update({"age": 21})
-print(student)
-student = {"name": "Ali", "age": 20}
-
-# Print keys
-for key in student:
-    print(key)
-
-# Print values
-for value in student.values():
-    print(value)
-
-# Print both
-for key, value in student.items():
-    print(key, value)
-    #dictionary represent as { } not ( )
-    #dictionary (an emty dictionary represents in curly bracket.
-    a={ }
-    print (type(a))
-#SETS
-    b=set( )
-print(type(b))
-    #Dont use { } in sets
-s={4, 5, 6, 5, 8, 10, 110}
-print (s)
-e={4, 5, 6, 5, 8, 10, 110, "duaa"}
-print (e, type(e))
-e.add(78)
-print(e)
-s1={1,8,9}
-s2={6,7,8}
-print(s1.union(s2))
-print(s1.intersection(s2))
-s1={1,23,45}
-s2={35,2,45,71}
-s1-s2
-A = {1, 2}
-B = {1, 2, 3, 4}
-
-print(A.issubset(B))
-# True
-
-print(B.issuperset(A))
-# True
-
-print(A.isdisjoint(B))
-# False
+#Write  a program to detect double space in a string.
+name="Duaa is a good   girl"
+print (name.find("  "))
+              #...if tgere is no double space its shows -1
+#Replace the double space from the problem 3 with single spaces.
+name="Duaa is a good   girl"
+print(name.replace("   "," "))
+#Write a program to format the following letter using escape sequence characters.
+letter="Dear,\n Duaa.\tYou are doing great\nLove youuu!"
+print(letter)
